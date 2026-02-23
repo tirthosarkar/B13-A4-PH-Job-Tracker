@@ -28,6 +28,38 @@
     </style>
 </head>
 <body class="min-h-screen py-10">
+      <div class="w-[90%] sm:w-[95%] max-w-6xl mx-auto">
+
+        <!--  Title -->
+        <h1 class="text-2xl sm:text-4xl font-bold text-slate-800 mb-4 sm:mb-6">Job Application Tracker</h1>
+
+        <!--  Dashboard Card -->
+        <div class="grid grid-cols-3 gap-2 sm:gap-3 mb-5 sm:mb-8">
+            <div class="bg-white rounded-xl border border-gray-200 p-4 sm:p-5
+hover:border-green-400 
+active:border-green-600
+transition-colors duration-200">
+                <p class="text-md text-gray-500 mb-1 hidden sm:block">Total</p>
+                <p id="totalcount" class="text-2xl sm:text-3xl font-bold text-blue-600">8</p>
+            </div>
+            <div class="bg-white rounded-xl border border-gray-200 p-4 sm:p-5
+hover:border-green-400 
+active:border-green-600
+transition-colors duration-200">
+                <p class="text-md text-gray-500 mb-1 hidden sm:block">Interview</p>
+                <p id="interviewcount" class="text-2xl sm:text-3xl font-bold text-green-500">0</p>
+            </div>
+            <div class="bg-white rounded-xl border border-gray-200 p-4 sm:p-5
+hover:border-green-400 
+active:border-green-600
+transition-colors duration-200">
+                <p class="text-md text-gray-500 mb-1 hidden sm:block">Rejected</p>
+                <p id="rejectedcount" class="text-2xl sm:text-3xl font-bold text-red-500">0</p>
+            </div>
+        </div>
+
+
+        </div>
     
 </body>
 </html>
