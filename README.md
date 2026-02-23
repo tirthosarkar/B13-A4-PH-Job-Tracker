@@ -2,7 +2,7 @@
 
 ## 1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
-### 1️⃣ getElementById()
+### 1️. getElementById()
 
 getElementById() selects a single HTML element using its unique id.
 It returns the element as an object.
@@ -25,7 +25,7 @@ const heading = document.getElementById("title");
 
 ---
 
-### 2️⃣ getElementsByClassName()
+### 2️. getElementsByClassName()
 
 getElementsByClassName() selects elements using their class name.
 It returns an HTMLCollection, which is like an array but not exactly an array.
@@ -50,7 +50,7 @@ items[0]; // access first element
 
 ---
 
-### 3️⃣ querySelector()
+### 3️. querySelector()
 
 querySelector() selects the first HTML element that matches a CSS selector.
 It returns the element as an object.
@@ -73,7 +73,7 @@ const firstText = document.querySelector(".text");
 
 ---
 
-### 4️⃣ querySelectorAll()
+### 4️. querySelectorAll()
 
 querySelectorAll() selects all HTML elements that match a CSS selector.
 It gives a NodeList, which is similar to an array but not exactly an array.
@@ -98,7 +98,7 @@ items.forEach(item => console.log(item.innerText));
 
 ---
 
-### ✅ Summary
+###  Summary
 
 ==> All of these methods help JavaScript find and manipulate elements in the HTML.  
 ==> They let us select specific elements or multiple elements so we can change content, style, or behavior.
@@ -107,7 +107,7 @@ items.forEach(item => console.log(item.innerText));
 
 ## 2. How do you create and insert a new element into the DOM?
 
-### 2️⃣ How We create and insert a new element into the DOM:
+### 2️. How We create and insert a new element into the DOM:
 
 To create and insert a new element in the DOM, first of all we use document.createElement("tag") to create the element in memory. At this stage, it is not visible on the page. Next, we add some content to the element using innerText or set attributes like className. Once the element is ready, we can insert it into the page using different methods like: appendChild() to add it as the last child of a parent, prepend() to add it as the first child, insertBefore() to place it before a specific element, before() and after() to insert relative to another element, insertAdjacentElement() or insertAdjacentHTML() to insert at a specific position, and replaceChild() to swap an existing element with the new one. This process allows JavaScript to dynamically add, insert, or replace content and elements on a webpage.
 
@@ -159,7 +159,7 @@ parent.addEventListener("click", () => {
 
 ## 4. What is Event Delegation in JavaScript? Why is it useful?
 
-### 4️⃣ Event Delegation in JavaScript and its usefulness:
+### 4️. Event Delegation in JavaScript and its usefulness:
 
 Event Delegation is a technique where we attach a single event listener to a parent element instead of adding separate listeners to multiple child elements.
 The parent listens for events on its children, and we can use the event object to figure out which child triggered the event.
@@ -190,7 +190,7 @@ list.addEventListener("click", (event) => {
 
 ## 5. What is the difference between preventDefault() and stopPropagation() methods?
 
-### 5️⃣ Difference between preventDefault() and stopPropagation():
+### 5️. Difference between preventDefault() and stopPropagation():
 
 #### preventDefault()
 
