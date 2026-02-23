@@ -74,7 +74,224 @@ transition-colors duration-200">
                 class="text-md px-4 py-2 rounded-sm bg-white border border-gray-300 text-gray-500 hover:bg-gray-100 active:bg-gray-100 hover:border-gray-600 active:border-gray-600 hover:text-gray-700 active:text-gray-700 transition-colors">Rejected</button>
         </div>
 
+             <!--  Filter Section (Interview / Rejected) -->
+        <section id="filter-section" class="hidden space-y-3">
+        </section>
 
+         <!-- ── All Job Cards Here ── -->
+        <section id="jobs-card" class="space-y-3">
+
+            <!-- Card 1 -->
+            <div
+                class="card p-4 sm:p-5 relative bg-white rounded-xl border border-gray-200 hover:shadow-md hover:border-green-300 active:shadow-md active:border-green-300 transition-all duration-200 cursor-pointer">
+                <button
+                    class="delete-btn absolute top-3 right-3 w-10 h-10 rounded-full bg-gray-100 hover:bg-red-100 active:bg-red-100 text-gray-400 hover:text-red-400 active:text-red-400 transition-all duration-200 flex items-center justify-center border-none"><i
+                        class="fa-solid fa-trash-can pointer-events-none text-md"></i></button>
+                <h3 class="company-name font-semibold text-black text-lg sm:text-xl mb-0.5 pr-10">Mobile First Corp</h3>
+                <p class="position text-base text-gray-500 mb-2">React Native Developer</p>
+                <p class="text-base text-gray-400 mb-2 flex flex-wrap gap-x-1">
+                    <span class="location">Remote</span> · <span class="type">Full-time</span> · <span
+                        class="salary">$130,000 - $175,000</span>
+                </p>
+                <span
+                    class="status inline-block mb-3 px-3 py-1 bg-gray-100 text-gray-800 text-sm font-semibold rounded-md">NOT
+                    APPLIED</span>
+                <p class="description text-base text-gray-700 mb-4">Build cross-platform mobile applications using React
+                    Native. Work on products used by millions of users worldwide. Collaborate closely with design and
+                    product teams to ship exceptional experiences.</p>
+                <div class="flex gap-2 flex-wrap">
+                    <button
+                        class="interview-btn text-base px-4 py-2 rounded-sm border border-green-500 text-green-600 font-semibold hover:bg-green-300 active:bg-green-200 transition-colors sm:flex-none flex-1 text-center">INTERVIEW</button>
+                    <button
+                        class="rejected-btn text-base px-4 py-2 rounded-sm border border-red-500 text-red-600 font-semibold hover:bg-red-300 active:bg-red-200 transition-colors sm:flex-none flex-1 text-center">REJECTED</button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+                class="card p-4 sm:p-5 relative bg-white rounded-xl border border-gray-200 hover:shadow-md hover:border-green-300 active:shadow-md active:border-green-300 transition-all duration-200 cursor-pointer">
+                <button
+                    class="delete-btn absolute top-3 right-3 w-10 h-10 rounded-full bg-gray-100 hover:bg-red-100 active:bg-red-100 text-gray-400 hover:text-red-400 active:text-red-400 transition-all duration-200 flex items-center justify-center border-none"><i
+                        class="fa-solid fa-trash-can pointer-events-none text-md"></i></button>
+                <h3 class="company-name font-semibold text-black text-lg sm:text-xl mb-0.5 pr-10">WebFlow Agency</h3>
+                <p class="position text-base text-gray-500 mb-2">Web Designer & Developer</p>
+                <p class="text-base text-gray-400 mb-2 flex flex-wrap gap-x-1">
+                    <span class="location">Los Angeles, CA</span> · <span class="type">Part-time</span> · <span
+                        class="salary">$80,000 - $120,000</span>
+                </p>
+                <span
+                    class="status inline-block mb-3 px-3 py-1 bg-gray-100 text-gray-800 text-sm font-semibold rounded-md">NOT
+                    APPLIED</span>
+                <p class="description text-base text-gray-700 mb-4">Deliver stunning web experiences for high-profile
+                    clients. Must have a strong portfolio and experience with modern web design trends. Creativity and
+                    attention to detail are non-negotiable.</p>
+                <div class="flex gap-2 flex-wrap">
+                    <button
+                        class="interview-btn text-base px-4 py-2 rounded-sm border border-green-500 text-green-600 font-semibold hover:bg-green-300 active:bg-green-200 transition-colors sm:flex-none flex-1 text-center">INTERVIEW</button>
+                    <button
+                        class="rejected-btn text-base px-4 py-2 rounded-sm border border-red-400 text-red-500 font-semibold hover:bg-red-300 active:bg-red-200 transition-colors sm:flex-none flex-1 text-center">REJECTED</button>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+                class="card p-4 sm:p-5 relative bg-white rounded-xl border border-gray-200 hover:shadow-md hover:border-green-300 active:shadow-md active:border-green-300 transition-all duration-200 cursor-pointer">
+                <button
+                    class="delete-btn absolute top-3 right-3 w-10 h-10 rounded-full bg-gray-100 hover:bg-red-100 active:bg-red-100 text-gray-400 hover:text-red-400 active:text-red-400 transition-all duration-200 flex items-center justify-center border-none"><i
+                        class="fa-solid fa-trash-can pointer-events-none text-md"></i></button>
+                <h3 class="company-name font-semibold text-black text-lg sm:text-xl mb-0.5 pr-10">DataViz Solutions</h3>
+                <p class="position text-base text-gray-500 mb-2">Data Visualization Specialist</p>
+                <p class="text-base text-gray-400 mb-2 flex flex-wrap gap-x-1">
+                    <span class="location">Boston, MA</span> · <span class="type">Full-time</span> · <span
+                        class="salary">$125,000 - $165,000</span>
+                </p>
+                <span
+                    class="status inline-block mb-3 px-3 py-1 bg-gray-100 text-gray-800 text-sm font-semibold rounded-md">NOT
+                    APPLIED</span>
+                <p class="description text-base text-gray-700 mb-4">Transform complex datasets into compelling visual
+                    stories. Required skills: D3.js, React, and strong analytical mindset. Work with Fortune 500 clients
+                    on data-driven products and dashboards.</p>
+                <div class="flex gap-2 flex-wrap">
+                    <button
+                        class="interview-btn text-base px-4 py-2 rounded-sm border border-green-500 text-green-600 font-semibold hover:bg-green-300 active:bg-green-200 transition-colors sm:flex-none flex-1 text-center">INTERVIEW</button>
+                    <button
+                        class="rejected-btn text-base px-4 py-2 rounded-sm border border-red-500 text-red-600 font-semibold hover:bg-red-300 active:bg-red-200 transition-colors sm:flex-none flex-1 text-center">REJECTED</button>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div
+                class="card p-4 sm:p-5 relative bg-white rounded-xl border border-gray-200 hover:shadow-md hover:border-green-300 active:shadow-md active:border-green-300 transition-all duration-200 cursor-pointer">
+                <button
+                    class="delete-btn absolute top-3 right-3 w-10 h-10 rounded-full bg-gray-100 hover:bg-red-100 active:bg-red-100 text-gray-400 hover:text-red-400 active:text-red-400 transition-all duration-200 flex items-center justify-center border-none"><i
+                        class="fa-solid fa-trash-can pointer-events-none text-md"></i></button>
+                <h3 class="company-name font-semibold text-black text-lg sm:text-xl mb-0.5 pr-10">CloudFirst Inc</h3>
+                <p class="position text-base text-gray-500 mb-2">Backend Developer</p>
+                <p class="text-base text-gray-400 mb-2 flex flex-wrap gap-x-1">
+                    <span class="location">Seattle, WA</span> · <span class="type">Full-time</span> · <span
+                        class="salary">$140,000 - $190,000</span>
+                </p>
+                <span
+                    class="status inline-block mb-3 px-3 py-1 bg-gray-100 text-gray-800 text-sm font-semibold rounded-md">NOT
+                    APPLIED</span>
+                <p class="description text-base text-gray-700 mb-4">Design and maintain scalable backend systems using
+                    Python and AWS. Work with modern DevOps practices and cloud infrastructure. Own critical services
+                    that power enterprise-level client applications.</p>
+                <div class="flex gap-2 flex-wrap">
+                    <button
+                        class="interview-btn text-base px-4 py-2 rounded-sm border border-green-500 text-green-600 font-semibold hover:bg-green-300 active:bg-green-200 transition-colors sm:flex-none flex-1 text-center">INTERVIEW</button>
+                    <button
+                        class="rejected-btn text-base px-4 py-2 rounded-sm border border-red-500 text-red-600 font-semibold hover:bg-red-300 active:bg-red-200 transition-colors sm:flex-none flex-1 text-center">REJECTED</button>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div
+                class="card p-4 sm:p-5 relative bg-white rounded-xl border border-gray-200 hover:shadow-md hover:border-green-300 active:shadow-md active:border-green-300 transition-all duration-200 cursor-pointer">
+                <button
+                    class="delete-btn absolute top-3 right-3 w-10 h-10 rounded-full bg-gray-100 hover:bg-red-100 active:bg-red-100 text-gray-400 hover:text-red-400 active:text-red-400 transition-all duration-200 flex items-center justify-center border-none"><i
+                        class="fa-solid fa-trash-can pointer-events-none text-md"></i></button>
+                <h3 class="company-name font-semibold text-black text-lg sm:text-xl mb-0.5 pr-10">Innovation Labs</h3>
+                <p class="position text-base text-gray-500 mb-2">UI/UX Engineer</p>
+                <p class="text-base text-gray-400 mb-2 flex flex-wrap gap-x-1">
+                    <span class="location">Austin, TX</span> · <span class="type">Full-time</span> · <span
+                        class="salary">$110,000 - $150,000</span>
+                </p>
+                <span
+                    class="status inline-block mb-3 px-3 py-1 bg-gray-100 text-gray-800 text-sm font-semibold rounded-md">NOT
+                    APPLIED</span>
+                <p class="description text-base text-gray-700 mb-4">Create beautiful and functional user interfaces for
+                    a suite of products. Strong design skills and frontend development expertise required. Drive the
+                    design system from concept to production with real user impact.</p>
+                <div class="flex gap-2 flex-wrap">
+                    <button
+                        class="interview-btn text-base px-4 py-2 rounded-sm border border-green-500 text-green-600 font-semibold hover:bg-green-300 active:bg-green-200 transition-colors sm:flex-none flex-1 text-center">INTERVIEW</button>
+                    <button
+                        class="rejected-btn text-base px-4 py-2 rounded-sm border border-red-500 text-red-600 font-semibold hover:bg-red-300 active:bg-red-200 transition-colors sm:flex-none flex-1 text-center">REJECTED</button>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div
+                class="card p-4 sm:p-5 relative bg-white rounded-xl border border-gray-200 hover:shadow-md hover:border-green-300 active:shadow-md active:border-green-300 transition-all duration-200 cursor-pointer">
+                <button
+                    class="delete-btn absolute top-3 right-3 w-10 h-10 rounded-full bg-gray-100 hover:bg-red-100 active:bg-red-100 text-gray-400 hover:text-red-400 active:text-red-400 transition-all duration-200 flex items-center justify-center border-none"><i
+                        class="fa-solid fa-trash-can pointer-events-none text-md"></i></button>
+                <h3 class="company-name font-semibold text-black text-lg sm:text-xl mb-0.5 pr-10">MegaCorp Solutions
+                </h3>
+                <p class="position text-base text-gray-500 mb-2">JavaScript Developer</p>
+                <p class="text-base text-gray-400 mb-2 flex flex-wrap gap-x-1">
+                    <span class="location">New York, NY</span> · <span class="type">Full-time</span> · <span
+                        class="salary">$130,000 - $170,000</span>
+                </p>
+                <span
+                    class="status inline-block mb-3 px-3 py-1 bg-gray-100 text-gray-800 text-sm font-semibold rounded-md">NOT
+                    APPLIED</span>
+                <p class="description text-base text-gray-700 mb-4">Build enterprise applications with JavaScript and
+                    modern frameworks. Competitive compensation, health insurance, and professional development
+                    opportunities included. Hybrid work schedule available for all employees.</p>
+                <div class="flex gap-2 flex-wrap">
+                    <button
+                        class="interview-btn text-base px-4 py-2 rounded-sm border border-green-500 text-green-600 font-semibold hover:bg-green-300 active:bg-green-200 transition-colors sm:flex-none flex-1 text-center">INTERVIEW</button>
+                    <button
+                        class="rejected-btn text-base px-4 py-2 rounded-sm border border-red-500 text-red-600 font-semibold hover:bg-red-300 active:bg-red-200 transition-colors sm:flex-none flex-1 text-center">REJECTED</button>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div
+                class="card p-4 sm:p-5 relative bg-white rounded-xl border border-gray-200 hover:shadow-md hover:border-green-300 active:shadow-md active:border-green-300 transition-all duration-200 cursor-pointer">
+                <button
+                    class="delete-btn absolute top-3 right-3 w-10 h-10 rounded-full bg-gray-100 hover:bg-red-100 active:bg-red-100 text-gray-400 hover:text-red-400 active:text-red-400 transition-all duration-200 flex items-center justify-center border-none"><i
+                        class="fa-solid fa-trash-can pointer-events-none text-sm"></i></button>
+                <h3 class="company-name font-semibold text-black text-lg sm:text-xl mb-0.5 pr-10">StartupXYZ</h3>
+                <p class="position text-base text-gray-500 mb-2">Full Stack Engineer</p>
+                <p class="text-base text-gray-400 mb-2 flex flex-wrap gap-x-1">
+                    <span class="location">Remote</span> · <span class="type">Full-time</span> · <span
+                        class="salary">$120,000 - $160,000</span>
+                </p>
+                <span
+                    class="status inline-block mb-3 px-3 py-1 bg-gray-100 text-gray-800 text-sm font-semibold rounded-md">NOT
+                    APPLIED</span>
+                <p class="description text-base text-gray-700 mb-4">Join a fast-growing startup and own a large piece of
+                    the core platform. Experience with Node.js, React, and PostgreSQL required. Great equity package and
+                    benefits included. Ship features that matter from day one.</p>
+                <div class="flex gap-2 flex-wrap">
+                    <button
+                        class="interview-btn text-base px-4 py-2 rounded-sm border border-green-500 text-green-600 font-semibold hover:bg-green-300 active:bg-green-200 transition-colors sm:flex-none flex-1 text-center">INTERVIEW</button>
+                    <button
+                        class="rejected-btn text-base px-4 py-2 rounded-sm border border-red-500 text-red-600 font-semibold hover:bg-red-300 active:bg-red-200 transition-colors sm:flex-none flex-1 text-center">REJECTED</button>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div
+                class="card p-4 sm:p-5 relative bg-white rounded-xl border border-gray-200 hover:shadow-md hover:border-green-300 active:shadow-md active:border-green-300 transition-all duration-200 cursor-pointer">
+                <button
+                    class="delete-btn absolute top-3 right-3 w-10 h-10 rounded-full bg-gray-100 hover:bg-red-100 active:bg-red-100 text-gray-400 hover:text-red-400 active:text-red-400 transition-all duration-200 flex items-center justify-center border-none"><i
+                        class="fa-solid fa-trash-can pointer-events-none text-md"></i></button>
+                <h3 class="company-name font-semibold text-black text-lg sm:text-xl mb-0.5 pr-10">TechCorp Industries
+                </h3>
+                <p class="position text-base text-gray-500 mb-2">Senior Frontend Developer</p>
+                <p class="text-base text-gray-400 mb-2 flex flex-wrap gap-x-1">
+                    <span class="location">San Francisco, CA</span> · <span class="type">Full-time</span> · <span
+                        class="salary">$160,000 - $195,000</span>
+                </p>
+                <span
+                    class="status inline-block mb-3 px-3 py-1 bg-gray-100 text-gray-800 text-sm font-semibold rounded-md">NOT
+                    APPLIED</span>
+                <p class="description text-base text-gray-700 mb-4">Looking for an experienced Frontend Developer to
+                    build scalable web apps using React and TypeScript. Work with a talented team on cutting-edge
+                    products that reach millions of users globally. TypeScript expertise a must.</p>
+                <div class="flex gap-2 flex-wrap">
+                    <button
+                        class="interview-btn text-base px-4 py-2 rounded-sm border border-green-500 text-green-600 font-semibold hover:bg-green-300 active:bg-green-200 transition-colors sm:flex-none flex-1 text-center">INTERVIEW</button>
+                    <button
+                        class="rejected-btn text-base px-4 py-2 rounded-sm border border-red-500 text-red-600 font-semibold hover:bg-red-300 active:bg-red-200 transition-colors sm:flex-none flex-1 text-center">REJECTED</button>
+                </div>
+            </div>
+
+        </section>
 
 
 
