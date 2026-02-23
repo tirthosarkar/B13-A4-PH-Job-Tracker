@@ -60,3 +60,70 @@ function toggleStyle(id) {
 
   calculateCount();
 }
+
+// Step-5 {Event-Delegation for job-cards}
+jobsCard.addEventListener("click", function (event) {
+  const card = event.target.closest(".card");
+  if (!card) return;
+
+  const companyName = card.querySelector(".company-name").innerText;
+  const position = card.querySelector(".position").innerText;
+  const location = card.querySelector(".location").innerText;
+  const description = card.querySelector(".description").innerText;
+
+  // Step-6 {Interview button logic}
+  if (event.target.classList.contains("interview-btn")) {
+    const cardInfo = { companyName, position, location, description, status: "INTERVIEW" };
+
+    const jobExist = interviewList.find(item => item.companyName === companyName);
+    if (!jobExist) interviewList.push(cardInfo);
+
+    // Remove rejected button if (Toggle)
+    rejectedList = rejectedList.filter(item => item.companyName !== companyName);
+
+    card.querySelector(".status").innerText = "INTERVIEW";
+    card.querySelector(".status").className = "status inline-block mb-3 px-3 py-1 bg-green-100 text-green-700 text-sm font-semibold rounded-md";
+
+    if (currentStatus === "interview-btn") renderList(interviewList);
+    if (currentStatus === "rejected-btn") renderList(rejectedList);
+    calculateCount();
+  }
+
+  // Step-7 {Rejected button logic}
+  else if (event.target.classList.contains("rejected-btn")) {
+    const cardInfo = { companyName, position, location, description, status: "REJECTED" };
+
+    const jobExist = rejectedList.find(item => item.companyName === companyName);
+    if (!jobExist) rejectedList.push(cardInfo);
+
+    // Remove  Interview  button if  (Toggle)
+    interviewList = interviewList.filter(item => item.companyName !== companyName);
+
+    card.querySelector(".status").innerText = "REJECTED";
+    card.querySelector(".status").className = "status inline-block mb-3 px-3 py-1 bg-red-100 text-red-600 text-sm font-semibold rounded-md";
+
+    if (currentStatus === "interview-btn") renderList(interviewList);
+    if (currentStatus === "rejected-btn") renderList(rejectedList);
+    calculateCount();
+  }
+
+  // Step-8 {Delete button logic}
+  else if (event.target.classList.contains("delete-btn")) {
+    interviewList = interviewList.filter(item => item.companyName !== companyName);
+    rejectedList = rejectedList.filter(item => item.companyName !== companyName);
+    card.remove();
+    if (currentStatus === "interview-btn") renderList(interviewList);
+    if (currentStatus === "rejected-btn") renderList(rejectedList);
+    calculateCount();
+  }
+});
+
+// Step-9 {Event-Delegation on filter-section}
+filterSection.addEventListener("click", function (event) {
+  const card = event.target.closest(".card");
+  if (!card) return;
+
+  const companyName = card.querySelector(".company-name").innerText;
+  const position = card.querySelector(".position").innerText;
+  const location = card.querySelector(".location").innerText;
+  const description = card.querySelector(".description").innerText;
